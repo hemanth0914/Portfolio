@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/skills.css">
+        <link rel="stylesheet" href="styles/projects.css">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lilita+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Lilita+One&family=Original+Surfer&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <style>
+            p {
+                font-family: "Poppins";
+            }
+            .skills-heading {
+                color: rgba(83, 10, 179, 0.878);
+                font-family: "Lilita One";   
+                font-weight: 400;
+                font-size: 50px;
+                padding-left: 100px;
+            }
+            body {
+                padding-top: 130px;
+                display: flex;
+                flex-direction: column;
+            }
+            .aboutpage-header {
+                background-color: rgba(83, 10, 179, 0.878);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: fixed;
+                height: 100px;
+                top: 0px;
+                left:0px;
+                right: 0px;
+                border-bottom: rgb(216, 216, 216);
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                z-index: 1000;
+            }
+            .about-page-header-right {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                color: black;
+                font-size: 20px;
+                width: 500px;
+                font-family: "Poppins";
+                padding: 40px;
+            }
+            .social-media {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 300px;
+                padding-right: 100px;
+            }
+            .social-media img {
+                width: 50px;
+            }
+            .aboutpage-main-body {
+                background-color: rgb(255, 187, 0);
+                flex: 1;
+                padding-bottom: 100px;
+            }
+            .aboutpage-footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: lightgreen;
+                height: 100px;
+
+            }
+            .Greeting-message {
+                display: flex;
+                text-align: center;
+                font-family: "Poppins";
+                font-size: 68.919998px;
+                font-weight: 500;
+                line-height: 97.03936px;
+                color: #000;
+                justify-content: center;
+            }
+            .intro-about-me {
+                font-family: "Poppins";
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                height: 600px;
+            }
+            .my-info {
+                margin-right: 100px;
+            }
+            .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            padding: 20px;
+            margin-right: 100px;
+            height: 500px;
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 258px;
+            height: 258px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .card .college-logo {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card .college-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+
+        .about-page-header-right p {
+            color: #000;
+        }
+
+        .Resume {
+            width: 200px;
+            margin: 50px;
+        }
+        .Resume button {
+            width: 200px;
+            border-radius: 30px;
+            background-color: white;
+            color: #000;
+        }
+
+        .Resume button:hover {
+            background-color: black;
+            color: white;
+        }
+        .Interests {
+            background-color: hsla(236.14,76.68%,43.73%,1);
+            color: white;
+            height: 740px;
+        }
+
+        .hello-text {
+            color: rgba(83, 10, 179, 0.878);
+            font-family: Courgette;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid;
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end 4s;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="aboutpage-header">
+            <div>
+
+            </div>
+            <div class="about-page-header-right">
+                <div>
+                    <a href="#MyWork">
+                        <p style="
+                            color: rgb(255, 187, 0);
+                            font-family: 'Original Surfer';
+                            ">My Work</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pdfs/myResume.pdf">
+                        <p style="
+                        color: rgb(255, 187, 0);
+                        font-family: 'Original Surfer';
+                        ">Resume</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#target-skills">
+                        <p style="
+                        color: rgb(255, 187, 0);
+                        font-family: 'Original Surfer';
+                        font-weight: 400;
+                        font-style: normal;
+                        ">Skills</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="aboutpage-main-body">
+            <div>
+                <div class="Greeting-message">
+                    <p class="hello-text" ><strong>Hey! This is Hemanth</strong></p>
+                </div>
+                <div class="intro-about-me">
+                    <div class="card">
+                        <h2>Indala Venkata Sri Sai Hemanth</h2>
+                        <img class="college-logo" src="channel-pictures/iu-trident-promo.jpg" alt="College Logo">
+                        <p class="college-name">Indiana University</p>
+                        <p>Masters in Computer Science</p>
+                    </div>
+                    <div>
+                        <img style="
+                    width: 400px;
+                    height: 400px;
+                    " src="channel-pictures/myfoto.png" alt="">
+                    <div class="Resume">
+                        <button onclick="window.open('./pdfs/myResume.pdf')" >Download CV</button>
+                    </div>
+                    
+                    </div>
+                      
+                         
+                </div>
+                <div class="Interests">
+                    <p style="
+                        color: white;
+                        font-family: 'Lilita One';   
+                        font-weight: 400;
+                        font-size: 50px;
+                        padding-left: 100px;
+                        ">My Work</p>
+                    <div class="projects">
+                        <div class="project-photo">
+                            <img src="channel-pictures/Screenshot 2024-06-22 at 3.27.17 PM.png" alt="">
+                        </div>
+                        <div class="project-description">
+                            <p>
+                                The Secure File Share Application is built on AWS to provide a secure, scalable platform for file storage and transfer. It utilizes an Amazon S3 bucket for durable, always-available storage; an EC2 instance for processing and S3 bucket interaction, secured with an IAM role; an API Gateway to manage user requests and secure data transfer; a VPC link for direct, private API communication with the EC2 instance; and AWS Cloud Map for efficient service discovery and load management. This setup ensures seamless file uploads and downloads, robust scalability, and enhanced security, making it ideal for handling high volumes of user requests.
+                            </p>
+                            <div class="Github">
+                                <button onclick="window.open('https://github.com/hemanth0914/securefileshare')">
+                                    <strong>Github</strong>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="skills-heading" id="target-skills">Skills and Certifications</p>
+                <div class="Skills">
+                    <div class="certifications">
+                            <img src="channel-pictures/cert1.png" alt="">
+                            <img style="
+                                width: 350px;
+                            " src="channel-pictures/cert2.png" alt="">
+                        </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="parent">
+                                <div class="circle" id="sample-text">
+                                    <img src="channel-pictures/skills-icon-logo-illustration-skills-symbol-template-for-graphic-and-web-design-collection-free-vector.jpg" alt="">
+                                </div>
+                                <div class="image-holder">
+                                    <img data-text="AWS" src="channel-pictures/AWS-Logo-PNG-File.png" alt="">
+                                    <img data-text="B" src="channel-pictures/docker-icon-2048x2048-5mc7mvtn.png" alt="">
+                                    <img data-text="C" src="channel-pictures/Go-Logo_Blue.png" alt="">
+                                    <img data-text="D" src="channel-pictures/kisspng-django-web-development-web-framework-python-softwa-django-5b45d913c5b252.5696191815313042118098.jpg" alt="">
+                                    <img data-text="E" src="channel-pictures/267_Python-512.webp" alt="">
+                                    <img data-text="F" src="channel-pictures/Kubernetes_logo_without_workmark.svg.png" alt="">
+                                    <img data-text="G" src="channel-pictures/jenkins_logo_icon_170552.png" alt="">
+                                    <img data-text="H" src="channel-pictures/png-transparent-ansible-g2-technology-group-red-hat-organization-computer-software-magic-circle-miscellaneous-angle-company-thumbnail.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var images = document.getElementsByTagName('img');
+                        var sampleText = document.getElementById('sample-text');
+                        // for (var i = 0; i < images.length; i++) {
+                        //     images[i].addEventListener("mouseover", updateName);
+                        // }
+                
+                        // function updateName() {
+                        //     sampleText.innerHTML = this.getAttribute('data-text');
+                        // }
+                    </script>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="aboutpage-footer">
+            <div>
+
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/srisaihemanth/" target="_blank">
+                    <img style="
+                        width: 50px;
+                        " src="channel-pictures/circle-linkedin-512.webp" alt="">
+                </a>    
+                <a href="mailto:vindala@iu.edu" target="_blank">
+                    <img style="
+                        width: 50px;
+                        " src="channel-pictures/gmail-icon-free-png.webp" alt="">
+                </a>
+                </div>
+                
+
+
+            </div>
+        </div>
+    </body>
+</html>
